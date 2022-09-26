@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ! link Bootstrap icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <!-- ! Navbar part  -->
+
+    <div class="navbar">
+        <h2>Clothing Store</h2>
+        <a href="#cart">
+            <div class="cart">
+                <i class="bi bi-bag-heart-fill"></i>
+                <div class="cartAmount" id="cartAmount">0</div>
+            </div>
+        </a>
+    </div>
+
+    <!-- ! lead part -->
+
+    <header class="welcome-msg">
+        <h1>Welcome To Clothing Shop</h1>
+    </header>
+
+    <!-- ! Shop section -->
+    <div class="cart-total">
+        <div class="head-container">
+            <div class="totalbill-1">Total Bill: <span class="totalbill">0</span></div>
+            <button type="button" class="button red-button" id="red-button">Enpty Cart</button>
+        </div>
+
+        <div class="full-cart">
+            <div class="shopping-cart" id="shopping-cart">
+                <!-- <div class="item">
+                <img src="./images/img-1.png" width="30" height="30">
+                <div class="description">
+                    <h2>${name}</h2>
+                    <p>${disc}</p>
+                </div>
+                <div class="quantity">
+                    <h2>Quantity</h2>
+                    <i class="quantity-minus bi bi-dash-circle-fill" aria-hidden="true"></i>
+                    <input type="numeric" name="quantity" value="1" class="quantity-num quantity-item">
+                    <i class="quantity-plus bi bi-plus-circle-fill" aria-hidden="true"></i>
+                </div>
+                <div class="likeDelete">
+                    <h2>Like / Delete</h2>
+                    <div class="icon-content">
+                        <div class="heart">
+                            <i class="fa fa-heart fa-lg like-item" aria-hidden="true"></i>
+                        </div>
+                        <div class="delete">
+                            <i class="fa fa-trash-o fa-lg delete-item"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricePerItem">
+                    <h2>Price Per Item</h2>
+                    <div class="price-value">
+                        <input  class="price-item" type="text" name="price" value="399$" readonly>
+                    </div>
+                </div>
+                <div class="pricePerQuantity">
+                    <h2>Price of Quantity</h2>
+                    <div class="price-value">
+                        <input  class="price-item" type="text" name="price" value="399$" readonly>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+
+            <div class="checkout-container">
+                <div class="checkout-content">
+                    <div class="subtotal">
+                        <h3>SubTotal:</h3>
+                        <div class="total-subtotal"></div>
+                    </div>
+                    <div class="shipping">
+                        <h3>Shipping Fees:</h3>
+                        <div id="shipping_">8 TND</div>
+                    </div>
+                    <div class="total">
+                        <h3>Total:</h3>
+                        <div class="total-total"></div>
+                    </div>
+                </div>
+                <div class="checkout-btn-section">
+                    <div class="checkout-btn">
+                        <button type="button" class="button green-button">Checkout</button>
+                    </div>
+                    <!-- <div class="checkout-img"></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! Footer part -->
+    <footer class="final-part">
+        <section>Copyright 2022 &copy; <span class="style">Safa Bouguezzi</span> All Rights Reserved.</section>
+        <section>Made with
+            <span>❤</span>
+            by
+            <a href="https://github.com/safabouguezzi" target="_blank">SB</a>
+        </section>
+    </footer>
+
+    <!-- ! Link to javascript file -->
+    <script src="./js/main.js"></script>
+    <!-- ! link font awsome  -->
+    <script src="https://use.fontawesome.com/6114291cf1.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+/**
+* ! Changing default styles of the browser
+**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: "sans-serif";
+    background-color: var(--bg-color);
+    margin: auto;
+}
+
+/**
+* ! Setting Variables
+**/
+:root {
+    /* Trending Color Palettes: https://coolors.co/palettes/trending */
+    --bg-color: #F8F8F8;
+    --nav-color: #b6ccfe;
+    --logo-color: #00509d;
+    --primary-color: #00509d;
+    --secondary-color: #fff;
+    --cartAmount-color: #ff6700;
+    --margin-bottom: 6%;
+}
+
+/**
+* ! Navbar Styles are here
+**/
+.navbar {
+    background-color: var(--nav-color);
+    color: var(--logo-color);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: 25px;
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: var(--margin-bottom);
+    width: 100%;
+}
+
+.cart {
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--primary-color)
+}
+
+.cartAmount {
+    font-size: 16px;
+    background-color: var(--cartAmount-color);
+    color: var(--secondary-color);
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+/**
+* ! setting header style
+**/
+
+.welcome-msg {
+    color: var(--logo-color);
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: var(--margin-bottom);
+}
+
+/**
+* todo || setting Shop items here
+**/
+/**
+* ! setting minus and plus buttons style
+**/
+.bi-dash-circle-fill {
+    color: #ea7317;
+    cursor: pointer;
+}
+
+.bi-plus-circle-fill {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/**
+* ! setting the heart icon style
+**/
+.icon-content {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    color: var(--primary-color);
+    height: 50px;
+    cursor: pointer;
+}
+
+.totoggle {
+    color: var(--cartAmount-color);
+}
+
+/**
+* ! setting buttons style
+*/
+
+.button {
+    font-size: 1.2em;
+    color: white;
+    height: 7vh;
+    width: 15vw;
+    border-radius: 20px;
+}
+
+.red-button {
+    background-color: var(--cartAmount-color);
+    border-color: var(--cartAmount-color);
+}
+
+.green-button {
+    background-color: #55a630;
+    border-color: #55a630;
+}
+
+/**
+* ! setting the header of the cart style
+*/
+
+.head-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 2em;
+}
+
+.totalbill-1 {
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+
+/**
+* ! setting grid and flexbox
+*/
+.cart-total {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 20px;
+    border: solid var(--logo-color);
+    margin-bottom: 0.2em;
+    background-color: #d5def1e8;
+}
+
+.full-cart {
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    width: 80%;
+
+}
+
+/**
+* ! imgage of item Styles
+**/
+.img-items {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    padding: 5px;
+}
+
+/**
+* ! description of item Styles
+**/
+.description {
+    background-color: var(--content-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description>h2,
+.quantity>h2,
+.likeDelete>h2,
+.pricePerItem>h2,
+.pricePerQuantity>h2 {
+    padding-top: 5px;
+    font-weight: bolder;
+    font-size: 1em;
+    text-align: center;
+    flex: 1
+}
+
+.description>p {
+    flex: auto;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/**
+* ! setting quantity style
+*/
+
+.quantity-num {
+    justify-content: space-between;
+    max-width: 3em;
+    align-items: center;
+    text-align: center;
+}
+
+.for_quantity_num-style {
+    align-items: center;
+    padding: 0;
+    flex: auto;
+}
+
+.quantity {
+    background-color: var(--content-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/**
+* ! setting like/delete item Styles
+**/
+.content-like {
+    flex: 1;
+    background-color: var(--content-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.like-title {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--content-bg-color);
+}
+
+.like-title>h2 {
+    padding-top: 5px;
+    font-size: 1em;
+}
+
+/**
+* ! setting Price per item  and Price of Quantity Styles
+**/
+.price-value {
+    flex: auto;
+}
+
+.price-item {
+    max-width: 5em !important;
+    align-items: center;
+    flex: auto;
+}
+
+.price-value>input {
+    text-align: center;
+}
+
+.pricePerItem,
+.pricePerQuantity {
+    flex: 1;
+    background-color: var(--content-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-item-quantity {
+    background-color: white;
+    border: 0.5px solid black;
+    padding: 2px;
+}
+
+/** 
+*! checkout style 
+*/
+.checkout-container {
+    margin: auto;
+    border: solid var(--logo-color);
+    background-color: #d5def1e8;
+}
+
+.subtotal,
+.shipping,
+.total,
+.checkout-btn {
+    padding: 2em;
+    text-align: center;
+}
+
+
+/**
+* ! setting footer style here
+**/
+
+.final-part {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: var(--margin-bottom);
+    margin-bottom: 1%;
+}
+
+.final-part .style {
+    font-weight: bolder;
+}
+
+.final-part span {
+    color: var(--primary-color)
+}
